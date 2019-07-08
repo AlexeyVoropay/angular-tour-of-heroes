@@ -97,26 +97,24 @@
 
 
 <div class="content">
-<h1 id="the-hero-editor">The Hero Editor<a title="Link to this heading" class="header-link" aria-hidden="true" href="https://angular.io/tutorial/toh-pt1#the-hero-editor"><i class="material-icons">link</i></a></h1><aio-toc class="embedded" ng-version="7.2.9"><!----><div class="toc-inner no-print collapsed ng-star-inserted"><!----><!----><button aria-label="Expand/collapse contents" class="toc-heading embedded secondary ng-star-inserted" title="Expand/collapse contents" type="button" aria-pressed="false"> Contents <mat-icon class="rotating-icon mat-icon collapsed" role="img" svgicon="keyboard_arrow_right" aria-hidden="true"><svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg></mat-icon></button><ul class="toc-list embedded"><!----><!----><!----><!----><!----><!----><li title="Create the heroes componentlink" class="h2 ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#create-the-heroes-component">Create the heroes component</a></li><!----><!----><!----><li title="Add a hero propertylink" class="h3 ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#add-a-hero-property">Add a <em>hero</em> property</a></li><!----><!----><!----><li title="Show the herolink" class="h3 ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#show-the-hero">Show the hero</a></li><!----><!----><!----><li title="Show the HeroesComponent viewlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#show-the-heroescomponent-view">Show the <em>HeroesComponent</em> view</a></li><!----><!----><!----><li title="Create a Hero classlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#create-a-hero-class">Create a Hero class</a></li><!----><!----><!----><li title="Show the hero objectlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#show-the-hero-object">Show the hero object</a></li><!----><!----><!----><li title="Format with the UppercasePipelink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#format-with-the-uppercasepipe">Format with the <em>UppercasePipe</em></a></li><!----><!----><!----><li title="Edit the herolink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#edit-the-hero">Edit the hero</a></li><!----><!----><!----><li title="Two-way bindinglink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#two-way-binding">Two-way binding</a></li><!----><!----><!----><li title="The missing FormsModulelink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#the-missing-formsmodule">The missing <em>FormsModule</em></a></li><!----><!----><!----><li title="AppModulelink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#appmodule"><em>AppModule</em></a></li><!----><!----><!----><li title="Import FormsModulelink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#import-formsmodule">Import <em>FormsModule</em></a></li><!----><!----><!----><li title="Declare HeroesComponentlink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#declare-heroescomponent">Declare <em>HeroesComponent</em></a></li><!----><!----><!----><li title="Final code reviewlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#final-code-review">Final code review</a></li><!----><!----><!----><li title="Summarylink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#summary">Summary</a></li><!----></ul><!----><button aria-label="Expand/collapse contents" class="toc-more-items embedded material-icons collapsed ng-star-inserted" title="Expand/collapse contents" type="button" aria-pressed="false"></button></div></aio-toc>
-<p>The application now has a basic title.
-Next you will create a new component to display hero information
-and place that component in the application shell.</p>
+<h1 id="the-hero-editor">Редактор героя<a title="Link to this heading" class="header-link" aria-hidden="true" href="https://angular.io/tutorial/toh-pt1#the-hero-editor"><i class="material-icons">link</i></a></h1><aio-toc class="embedded" ng-version="7.2.9"><!----><div class="toc-inner no-print collapsed ng-star-inserted"><!----><!----><button aria-label="Expand/collapse contents" class="toc-heading embedded secondary ng-star-inserted" title="Expand/collapse contents" type="button" aria-pressed="false"> Contents <mat-icon class="rotating-icon mat-icon collapsed" role="img" svgicon="keyboard_arrow_right" aria-hidden="true"><svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg></mat-icon></button><ul class="toc-list embedded"><!----><!----><!----><!----><!----><!----><li title="Create the heroes componentlink" class="h2 ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#create-the-heroes-component">Create the heroes component</a></li><!----><!----><!----><li title="Add a hero propertylink" class="h3 ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#add-a-hero-property">Add a <em>hero</em> property</a></li><!----><!----><!----><li title="Show the herolink" class="h3 ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#show-the-hero">Show the hero</a></li><!----><!----><!----><li title="Show the HeroesComponent viewlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#show-the-heroescomponent-view">Show the <em>HeroesComponent</em> view</a></li><!----><!----><!----><li title="Create a Hero classlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#create-a-hero-class">Create a Hero class</a></li><!----><!----><!----><li title="Show the hero objectlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#show-the-hero-object">Show the hero object</a></li><!----><!----><!----><li title="Format with the UppercasePipelink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#format-with-the-uppercasepipe">Format with the <em>UppercasePipe</em></a></li><!----><!----><!----><li title="Edit the herolink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#edit-the-hero">Edit the hero</a></li><!----><!----><!----><li title="Two-way bindinglink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#two-way-binding">Two-way binding</a></li><!----><!----><!----><li title="The missing FormsModulelink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#the-missing-formsmodule">The missing <em>FormsModule</em></a></li><!----><!----><!----><li title="AppModulelink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#appmodule"><em>AppModule</em></a></li><!----><!----><!----><li title="Import FormsModulelink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#import-formsmodule">Import <em>FormsModule</em></a></li><!----><!----><!----><li title="Declare HeroesComponentlink" class="h3 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#declare-heroescomponent">Declare <em>HeroesComponent</em></a></li><!----><!----><!----><li title="Final code reviewlink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#final-code-review">Final code review</a></li><!----><!----><!----><li title="Summarylink" class="h2 secondary ng-star-inserted"><a href="https://angular.io/tutorial/toh-pt1#summary">Summary</a></li><!----></ul><!----><button aria-label="Expand/collapse contents" class="toc-more-items embedded material-icons collapsed ng-star-inserted" title="Expand/collapse contents" type="button" aria-pressed="false"></button></div></aio-toc>
 <p>Наше приложение теперь имеет название.
 Теперь мы создадим новый компонент для отображения информации о героях
 и поместим этот компонент в оболочку приложения.
 </p>
-<h2 id="create-the-heroes-component">Create the heroes component<a title="Link to this heading" class="header-link" aria-hidden="true" href="https://angular.io/tutorial/toh-pt1#create-the-heroes-component"><i class="material-icons">link</i></a></h2>
-<p>Using the Angular CLI, generate a new component named <code>heroes</code>.</p>
+<h2 id="create-the-heroes-component">Создание компонента героев <a title="Link to this heading" class="header-link" aria-hidden="true" href="https://angular.io/tutorial/toh-pt1#create-the-heroes-component"><i class="material-icons">link</i></a></h2>
+<p>Используя CLI запустим команду для генерации компонента с именем <code>heroes</code>.</p>
 <code-example language="sh" class="code-shell" ng-version="7.2.9"><div style="display: none">
   ng generate component heroes
-</div><!----><aio-code><pre class="prettyprint lang-sh">      <!----><button class="material-icons copy-button no-print ng-star-inserted" title="Copy code snippet" aria-label="">
+</div><!----><aio-code><pre class="prettyprint lang-sh">      <!---->
+	<button class="material-icons copy-button no-print ng-star-inserted" title="Copy code snippet" aria-label="">
         <span aria-hidden="true">content_copy</span>
       </button>
       <code class="animated fadeIn"><span class="pln">ng generate component heroes</span></code>
     </pre></aio-code></code-example>
-<p>The CLI creates a new folder, <code>src/app/heroes/</code>, and generates
-the four files of the  <code>HeroesComponent</code>.</p>
-<p>The <code>HeroesComponent</code> class file is as follows:</p>
+<p>CLI создаст новую папку, <code>src/app/heroes/</code>, 
+и сгенерирует 4 файла <code>HeroesComponent</code>.</p>
+<p>Файл класса <code>HeroesComponent</code>   выглядит следующим образом:</p>
 <code-example path="toh-pt1/src/app/heroes/heroes.component.ts" region="v1" header="app/heroes/heroes.component.ts (initial version)" linenums="false" ng-version="7.2.9"><div style="display: none">
 import { <a href="https://angular.io/api/core/Component" class="code-anchor">Component</a>, <a href="https://angular.io/api/core/OnInit" class="code-anchor">OnInit</a> } from '@angular/core';
 
@@ -153,21 +151,22 @@ export class HeroesComponent implements <a href="https://angular.io/api/core/OnI
 
 </span><span class="pun">}</span></code>
     </pre></aio-code></code-example>
-<p>You always import the <code><a href="https://angular.io/api/core/Component" class="code-anchor">Component</a></code> symbol from the Angular core library
-and annotate the component class with <code>@<a href="https://angular.io/api/core/Component" class="code-anchor">Component</a></code>.</p>
-<p><code>@<a href="https://angular.io/api/core/Component" class="code-anchor">Component</a></code> is a decorator function that specifies the Angular metadata for the component.</p>
-<p>The CLI generated three metadata properties:</p>
+	
+<p>Вы всегда импортируете <code><a href="https://angular.io/api/core/Component" class="code-anchor">Component</a></code> символ из базовой библиотеки 
+Angular и описываете класс компонента с помощью <code>@<a href="https://angular.io/api/core/Component" class="code-anchor">Component</a></code>.</p>
+<p><code>@<a href="https://angular.io/api/core/Component" class="code-anchor">Component</a></code> это функция декоратора, которая определяет Angular метаданные для компонента.</p>
+<p>CLI сгенерировал три свойства метаданных:</p>
 <ol>
-<li><code>selector</code>— the component's CSS element selector</li>
-<li><code>templateUrl</code>— the location of the component's template file.</li>
-<li><code><a href="https://angular.io/api/core/Component#styleUrls" class="code-anchor">styleUrls</a></code>— the location of the component's private CSS styles.</li>
+<li><code>selector </code>— селектор CSS элемента компонента.</li>
+<li><code>templateUrl </code>— расположение файла шаблона компонента.</li>
+<li><code><a href="https://angular.io/api/core/Component#styleUrls" class="code-anchor">styleUrls </a></code>— расположение частных стилей CSS компонента.</li>
 </ol>
 <a id="selector"></a>
-<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">CSS element selector</a>,
-<code>'app-heroes'</code>, matches the name of the HTML element that identifies this component within a parent component's template.</p>
-<p>The <code>ngOnInit</code> is a <a href="https://angular.io/guide/lifecycle-hooks#oninit">lifecycle hook</a>.
-Angular calls <code>ngOnInit</code> shortly after creating a component.
-It's a good place to put initialization logic.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">Селектор элемента CSS</a>,
+<code>'app-heroes'</code>, соответствует имени HTML-элемента, который идентифицирует этот компонент в шаблоне родительского компонента.</p>
+<p><code>ngOnInit</code> это <a href="https://angular.io/guide/lifecycle-hooks#oninit">хук жизненного цикла</a>.
+Angular вызывает <code>ngOnInit</code> сразу после создания компонента.
+Это хорошее место для размещения логики инициализации.</p>
 <p>Always <code>export</code> the component class so you can <code>import</code> it elsewhere ... like in the <code>AppModule</code>.</p>
 <h3 id="add-a-hero-property">Add a <em>hero</em> property<a title="Link to this heading" class="header-link" aria-hidden="true" href="https://angular.io/tutorial/toh-pt1#add-a-hero-property"><i class="material-icons">link</i></a></h3>
 <p>Add a <code>hero</code> property to the <code>HeroesComponent</code> for a hero named "Windstorm."</p>
